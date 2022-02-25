@@ -5,7 +5,7 @@
   <title>Javascript Clock UI Dark</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body >
   <div class="clock">
     <div class="hour">
       <div class="hr" id="hr"></div>
@@ -17,7 +17,14 @@
       <div class="sc" id="sc"></div>
     </div>
   </div>
+  <div class="toggleClass" onclick="toggleClass()" ></div>
  <script type="text/javascript">
+    function toggleClass() {
+        const body = document.querySelector('body');
+     body.classList.toggle('light');
+
+    }
+
      const deg = 6;
      const hr = document.querySelector('#hr');
      const mn = document.querySelector('#mn');
